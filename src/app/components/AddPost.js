@@ -12,6 +12,7 @@ export class AddPost extends React.Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
+        console.log(this.state);
         this.props.addPosts(this.state);
     }
 
