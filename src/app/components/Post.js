@@ -5,10 +5,12 @@ import { removePost } from '../actions/ActionCreator';
 export class Post extends React.Component {
 
     delPost = (e, id) => {
+        console.log(id);
         this.props.del(id);
     }
 
     render() {
+        console.log("In a Post Component");
         return (
             <table className="table table-striped table-bordered">
                 <thead className="thead-dark">

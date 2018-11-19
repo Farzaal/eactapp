@@ -23,6 +23,7 @@ export class Form extends React.Component {
     }
 
     render() {
+        console.log("Inside a Form Component");
         return(
             <div className="container">
             <div className="card">

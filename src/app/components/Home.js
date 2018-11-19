@@ -5,10 +5,12 @@ import { removeArticle } from "../actions/ActionCreator";
 export class Home extends React.Component {
 
     delArticle = (e, id) => {
+        console.log(id);
         this.props.removeArticle(id);  
     }
 
     render() {
+        console.log("In a Render Component");
         return (
             <table className="table table-striped table-bordered">
                 <thead className="thead-dark">
